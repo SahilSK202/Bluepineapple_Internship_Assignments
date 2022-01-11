@@ -17,7 +17,7 @@ struct book
 struct book *head = NULL; // point to head book
 struct book *prev = NULL; // point to prev book to set address
 struct book *newbook;
-bool search(int item_id);
+int search(int);
 
 void createSLL()
 {
@@ -226,6 +226,25 @@ void delete_pos(int pos)
     }
 }
 
+void delete (int item_id)
+{
+    int pos;
+    if (head == NULL)
+    {
+        printf("\nBooks List is Empty.");
+        return;
+    }
+    pos = search(item_id);
+    if (!pos)
+    {
+        printf("Book Not Found !");
+    }
+    else
+    {
+        delete_pos(pos);
+    }
+}
+
 int sizeLL()
 {
     int size = 0;
@@ -241,9 +260,10 @@ int sizeLL()
     return size;
 }
 
-bool search(int item_id)
+int search(int item_id)
 {
     bool found = false;
+    int counter = 1;
     if (head == NULL)
     {
         printf("\nBooks List is Empty.");
@@ -259,10 +279,11 @@ bool search(int item_id)
             printf("Book Found in List! \n");
             printf("Book Id\tBook Name\n");
             printf("%d\t%s\n", ptr->book_id, ptr->book_name);
-            found = true;
+            return counter;
         }
+        ++counter;
     }
-    return found;
+    return 0;
 }
 
 void display()
@@ -292,9 +313,11 @@ int main()
     while (ch != 9)
     {
         printf("\n\n***** Main Menu *****");
+        printf("______________________________________");
         printf("\n\n1.Create\n2.Insert\n3.Delete\n4.Search\n8.Display\n9.Exit");
         printf("\n\nEnter your choice :");
         scanf("%d", &ch);
+        printf("______________________________________\n");
         switch (ch)
         {
         case 1:
@@ -309,9 +332,11 @@ int main()
             while (ch1 != 4)
             {
                 printf("\n\n***** Insert Menu *****");
+                printf("______________________________________");
                 printf("\n\n1.Insert at beginning\n2.Insert at end\n3.Insert at particular position\n4.Main Menu");
                 printf("\n\nEnter your choice : ");
                 scanf("%d", &ch1);
+                printf("______________________________________\n");
                 switch (ch1)
                 {
                 case 1:
@@ -398,12 +423,14 @@ int main()
         case 3:
         {
             int ch1 = 0;
-            while (ch1 != 4)
+            while (ch1 != 5)
             {
                 printf("\n\n***** Delete Menu *****");
-                printf("\n\n1.Delete from beginning\n2.Delete from end\n3.Delete from particular position\n4.Main Menu");
+                printf("______________________________________");
+                printf("\n\n1.Delete from beginning\n2.Delete from end\n3.Delete from particular position\n4.Delete by ID\n5.Main Menu");
                 printf("\n\nEnter your choice : ");
                 scanf("%d", &ch1);
+                printf("______________________________________\n");
                 switch (ch1)
                 {
                 case 1:
@@ -440,6 +467,12 @@ int main()
                     break;
                 }
                 case 4:
+                {
+                    printf("\nEnter ID of the book to delete: ");
+                    scanf("%d", &item_id);
+                    delete (item_id);
+                }
+                case 5:
                 {
                     break;
                 }
