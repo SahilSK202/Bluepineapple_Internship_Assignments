@@ -20,7 +20,10 @@ freq = word_frequency_counter(text)
 
 while(1):
     word = input("Enter any word :")
+    if word in ['q', 'Q']:
+        exit()
     if word.lower() in freq:
         print(f"Word '{word}' appears {freq[word]} times in above text.")
     else:
         print(f"Word '{word}' does not appear in above text.")
+    print("\nEnter q to quit.\n")
