@@ -12,3 +12,7 @@
 | 08. | [Book Management System ( Using Maps )](<https://github.com/SahilSK202/Bluepineapple_Internship_Assignments/tree/main/08.Book_Management_System_(Using_Maps)>) | 11/01/2022 |
 | 09. | [Crossword Solver](https://github.com/SahilSK202/Bluepineapple_Internship_Assignments/tree/main/09.Crossword_Solver)                                           | 13/01/2022 |
 | 10. | [SQL Practice](https://github.com/SahilSK202/Bluepineapple_Internship_Assignments/tree/main/10.SQLPractice)                                                    | 23/01/2022 |
+
+## Web Technologies Assigments
+
+| 11. | [Basic HTML Exercises](https://github.com/SahilSK202/Bluepineapple_Internship_Assignments/tree/main/11.HTML_Exercise) | 03/02/2022 |
