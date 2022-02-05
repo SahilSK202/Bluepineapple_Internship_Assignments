@@ -1,0 +1,70 @@
+header {
+  padding-left: 0 30px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00008b;
+}
+
+section a {
+  margin-left: 10px;
+}
+
+/* Make navbar menu items grey */
+section {
+  text-decoration: none;
+  color: #c5bfbf;
+}
+
+.hover_white :hover {
+  color: #ffffff;
+}
+
+#label_new {
+  color: #ffffff;
+  background-color: #5e5b5b;
+  border-radius: 30%;
+  font-size: 12px;
+}
+.row {
+  margin-bottom: 8%;
+}
+
+.container {
+  margin-top: 5%;
+  text-align: left;
+}
+
+p.tile-subtitle {
+  margin-bottom: 0;
+}
+
+.columns {
+  margin: 4% auto;
+}
+
+.toast.toast-error {
+  background-color: #f7d8d8;
+  color: #8b0000;
+}
+
+.bar {
+  margin-bottom: 5%;
+}
+
+.form-input :focus {
+  background-color: lightblue;
+  color: black;
+}
+
+.bottom {
+  height: fit-content;
+  background-color: #ebebeb;
+  padding: 2%;
+}
+
+.footer {
+  margin-top: 2%;
+  text-align: center;
+}

@@ -18,3 +18,4 @@
 | No. | Assignments                                                                                                           |    Date    |
 | --- | --------------------------------------------------------------------------------------------------------------------- | :--------: |
 | 11. | [Basic HTML Exercises](https://github.com/SahilSK202/Bluepineapple_Internship_Assignments/tree/main/11.HTML_Exercise) | 03/02/2022 |
+| 12. | [CSS Exercises](https://github.com/SahilSK202/Bluepineapple_Internship_Assignments/tree/main/12.CSS_Exercise)         | 04/02/2022 |
