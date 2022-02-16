@@ -1,3 +1,8 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   padding-left: 0 30px;
 }
@@ -17,8 +22,8 @@ section {
   color: #c5bfbf;
 }
 
-.hover_white :hover {
-  color: #ffffff;
+section a {
+  color: #c5bfbf !important;
 }
 
 #label_new {
@@ -34,6 +39,10 @@ section {
 .container {
   margin-top: 5%;
   text-align: left;
+}
+
+.greybg {
+  background-color: #ebebeb;
 }
 
 p.tile-subtitle {
@@ -62,6 +71,10 @@ p.tile-subtitle {
   height: fit-content;
   background-color: #ebebeb;
   padding: 2%;
+}
+
+.phos img {
+  border: 5px solid white;
 }
 
 .footer {
